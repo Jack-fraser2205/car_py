@@ -2,18 +2,9 @@ from mod import *
 
 car = Car()
 
-while True:
-    ans = input("Touch something! (Z/S) : ")
-    ans.lower()
-
-    # if ans == "z":
-    #     car.accelerate()
-    # elif ans == "s":
-    #     car.brake()
-    # elif ans == "gu":
-    #     car.gear_up()
-    # elif ans == "gd":
-    #     car.gear_down()
+while car.play:
+    ans = input("Touch something! : ")
+    ans = ans.lower()
 
     match ans:
         case "z":
@@ -24,3 +15,5 @@ while True:
             car.gear_up()
         case "gd":
             car.gear_down()
+        case "p":
+            car.park()
