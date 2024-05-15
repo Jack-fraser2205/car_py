@@ -23,7 +23,7 @@ This is a simple console application written in Python that simulates a car.
 3. Run the application:
 
    ```shell
-   python car_simulator.py
+   python main.py
    ```
 
 ## Usage
